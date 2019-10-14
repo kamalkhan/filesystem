@@ -47,7 +47,7 @@ $fs = new \Bhittani\Filesystem\Filesystem;
 Traverse over all the files (recursive) in a directory.
 
 ```php
-echo $fs->each('/path/to/a/directory', function (\SplFileInfo $splFileInfo) {
+$fs->each('/path/to/a/directory', function (\SplFileInfo $splFileInfo) {
     // Do something...
 });
 ```
@@ -57,7 +57,7 @@ echo $fs->each('/path/to/a/directory', function (\SplFileInfo $splFileInfo) {
 Inject a payload into a file or every file in a directory.
 
 ```php
-echo $fs->inject('/path/to/a/file/or/directory', [
+$fs->inject('/path/to/a/file/or/directory', [
     'foo' => 'bar',
 ]);
 ```
@@ -71,7 +71,7 @@ echo $fs->inject('/path/to/a/file/or/directory', [
 Dump a file or directory with an optional payload.
 
 ```php
-echo $fs->dump('/path/to/a/dest/directory', '/path/to/a/src/directory', [
+$fs->dump('/path/to/a/dest/directory', '/path/to/a/src/directory', [
     'foo' => 'bar',
 ]);
 ```
@@ -83,7 +83,7 @@ echo $fs->dump('/path/to/a/dest/directory', '/path/to/a/src/directory', [
 Get the contents of a file with an optional payload.
 
 ```php
-echo $fs->getContents('/path/to/file', [
+$fs->getContents('/path/to/file', [
     'foo' => 'bar',
 ]);
 ```
