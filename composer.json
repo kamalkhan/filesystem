@@ -1,0 +1,54 @@
+{
+    "name": "bhittani/filesystem",
+    "license": "MIT",
+    "description": "Utilities for working with the filesystem.",
+    "keywords": ["filesystem", "utility"],
+    "homepage": "https://github.com/kamalkhan/filesystem",
+    "authors": [
+        {
+            "role": "developer",
+            "name": "Kamal Khan",
+            "email": "shout@bhittani.com",
+            "homepage": "http://bhittani.com"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/kamalkhan/filesystem",
+        "issues": "https://github.com/kamalkhan/filesystem/issues"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bhittani\\Filesystem\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bhittani\\Filesystem\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "platform": { "php": "5.6" }
+    },
+    "require": {
+        "php": ">=5.6",
+        "symfony/filesystem": "*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.15",
+        "phpunit/phpunit": "<8"
+    },
+    "scripts": {
+        "test": "phpunit --colors=always",
+        "cs-fix": "php-cs-fixer fix --using-cache=no",
+        "cs-check": "php-cs-fixer fix --dry-run --using-cache=no"
+    }
+}
