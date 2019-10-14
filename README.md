@@ -11,7 +11,7 @@ Utilities for working with the filesystem in PHP.
   - [Each](#each)
   - [Inject](#inject)
   - [Dump](#dump)
-  - [getContents](#getcontents)
+  - [Get Contents](#get-contents)
 - [Static Access](#static-access)
 - [Changelog](#changelog)
 - [Testing](#testing)
@@ -78,7 +78,7 @@ echo $fs->dump('/path/to/a/dest/directory', '/path/to/a/src/directory', [
 
 > If a callback is provided as the payload, it will receive the path to the current destination file.
 
-### getContents
+### Get Contents
 
 Get the contents of a file with an optional payload.
 
