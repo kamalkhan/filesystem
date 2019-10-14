@@ -49,7 +49,7 @@ class Filesystem extends SymfonyFilesystem
                 if ($this->exists($pathOrContentsOrPayload)) {
                     $this->dumpFile(
                         $path,
-                        $this->getContents($pathOrContentsOrPayload, $payload),
+                        $this->getContents($pathOrContentsOrPayload, $payload)
                     );
                 } else {
                     $this->dumpFile(
